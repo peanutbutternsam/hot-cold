@@ -1,0 +1,368 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+/*float styles*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	background-color: whitesmoke;
+}
+
+body {
+	position: relative;
+	width: 98%;
+	height: 98%;
+	margin: 0.8em auto;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background-color: white;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.wrap {
+	height: auto;
+	background-color: white
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li {	
+	display: inline;
+}
+
+/*---------------------------------------------------------------------------------
+   Header Styles
+---------------------------------------------------------------------------------*/
+
+nav {
+	position: relative;
+	height: 10%;
+	padding: 1em;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+nav ul li:first-child {
+	float: left;
+}
+
+nav ul li:last-child {
+	float: right;
+}
+
+nav a {
+	color: black;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 3em;
+	padding: 2px;
+	color: black;
+}
+
+#hot{
+	color:rgb(152,22,22);
+}
+
+#cold {
+	color:rgb(48,48,133);
+}
+
+
+
+/*style for hidden modal*/
+.overlay {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: #e74c3c;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 1000;
+	display: none;
+}
+
+.content {
+	color: #fff;
+	background: #e74c3c;
+	position: relative;
+	height: auto;
+	width: 600px;
+	border-radius: 3px;
+	top: 15%;
+	margin: auto auto;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.content > div p {
+	margin: 0;
+	padding: 10px 0;
+	line-height: 2em;
+	text-align: justify;
+}
+
+.content > div ul {
+	margin-bottom: -30px;
+	padding: 0 0 30px 20px;
+	text-align: left;
+}
+
+.content > div ul li {
+	padding: 5px 0;
+	display: block;	
+	list-style-type: disc;
+	line-height: 1.5em;
+}
+
+.content > div ul li strong{
+	text-decoration: underline;
+}
+
+.content > div a {
+	font-size: 0.8em;
+	background: #1F253D;
+	color: #95a5a6;
+	padding: 0.5em 2em;
+	margin-bottom: 50px;
+	border-radius: 3px;
+}
+
+/*---------------------------------------------------------------------------------
+   Game Section Styles
+---------------------------------------------------------------------------------*/
+
+.thermometer {
+	position: relative;
+	background-color: whitesmoke;
+	width: 400px;
+	height: 360px;
+	display: inline-block;
+}
+
+.blank {
+	cursor: pointer;
+	background: url('../images/blank.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.blue {
+	cursor: pointer;
+	background: url('../images/blue.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.red {
+	cursor: pointer;
+	background: url('../images/red.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.aqua {
+	cursor: pointer;
+	background: url('../images/aqua.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.dark-blue {
+	cursor: pointer;
+	background: url('../images/dark-blue.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.yellow {
+	cursor: pointer;
+	background: url('../images/yellow.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.light-green {
+	cursor: pointer;
+	background: url('../images/light-green.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+.dark-orange {
+	cursor: pointer;
+	background: url('../images/dark-orange.png') no-repeat;
+	padding-top: 16px;
+	background-position: 50% 100%;
+}
+
+
+.game {
+	position: relative;
+	background-color: white;
+	width: 380px;
+	height: 310px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+h2 {
+	margin: 0 auto;
+	background: white;
+	padding: 0em 0.4em;
+	font-size: 1.5em;
+	font-weight: 400;
+	display: block;
+	line-height: 1em;
+	color: black;
+}
+
+.game p {
+	margin-top: 0.5em;
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+}
+
+#count {
+	color: #20D3AF;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	display: block;
+	padding: 0.8em 0;
+	margin: 0.8em auto 0;
+	background: #EEEFF1;
+	color: #fff;
+	border: solid 1px #1f253d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button {
+	background: #8F9AA8;
+	color: #484B4B;
+	font-size: 2em;
+	padding: 0.2em;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+}
+
+input.button:hover {
+	background: #566992;
+	color: #fff;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	cursor: pointer;
+}
+
+input.text {
+	text-align: center;
+	padding: 0.2em;
+	font-size: 2em;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+::-webkit-input-placeholder {
+   color: #95a5a6;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #95a5a6;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #95a5a6; 
+}
+
+:-ms-input-placeholder {  
+   color: #95a5a6; 
+}
+
+ul.guessBox {
+	height: 80px;
+	margin: 10px auto 0;
+	background: #11a8ab;
+	padding: 0.5em;
+	display: block;
+	line-height: 2em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: #fff;
+	overflow: auto;
+}
+
+ul.guessBox li {
+	display: inline;
+	background-color: #1a4e95;
+	padding: 0.3em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 95%;
+	margin: 0.2em;
+	color: #fff;
+}
