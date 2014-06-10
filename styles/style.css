@@ -104,7 +104,7 @@ h1 {
 	width: 100%;
 	height: 100%;
 	color: #fff;
-	background: #e74c3c;
+	background: #40e7c6;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -115,7 +115,7 @@ h1 {
 
 .content {
 	color: #fff;
-	background: #e74c3c;
+	background: #A6B1C2;
 	position: relative;
 	height: auto;
 	width: 600px;
@@ -174,6 +174,11 @@ h1 {
 	padding: 0.5em 2em;
 	margin-bottom: 50px;
 	border-radius: 3px;
+}
+
+.content > div a:hover {
+	background-color: rgb(53, 74, 117);
+
 }
 
 /*---------------------------------------------------------------------------------
