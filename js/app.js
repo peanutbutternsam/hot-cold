@@ -126,7 +126,7 @@ $(document).ready( function() {
 		guessCounter = 0;
 		//once the user guess = the random number, reset this to true
 		match = false;
-		$( 'ul#guessList li' ).remove();
+		$( 'p#guessList' ).text('');
 		changeFeedback( 'Guess a number below' );
 		changeCount( guessCounter );
 		randomNumber = numberGenerator();
